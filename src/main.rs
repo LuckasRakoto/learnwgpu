@@ -1,5 +1,6 @@
 use learnwgpu::run;
 
-fn main() {
-    pollster::block_on(run());    
+#[tokio::main]
+async fn main() {
+    run().await;
 }
